@@ -25,10 +25,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.preprocessing import StandardScaler
+from sklearn.calibration import LabelEncoder
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.decomposition import PCA
+from yellowbrick.cluster import KElbowVisualizer
 
 """
 3. Memuat Data
